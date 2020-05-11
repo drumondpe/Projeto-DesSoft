@@ -1,4 +1,6 @@
-"# Projeto-DesSoft" 
-testando
-testando 2
-testando 3
+import pygame
+import random
+
+pygame.init()
+
+
