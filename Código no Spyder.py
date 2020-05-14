@@ -27,8 +27,12 @@ class Jogo:
     def __init__(self):
         self.tela = pygame.display.set_mode(LARGURA, ALTURA)
         pygame.display.set_caption('Joguinho do come-come')
+        self.rodando = True
 
-
+    def rodar(self):
+        while self.rodando:
+            if self.estado == 'tela de inicio'
+            
 
                 
 ########## Outras funções ############
@@ -37,6 +41,10 @@ class Jogo:
 
 
 ###### Funções da primeira tela ######
+    def comeco_eventos(self):
+        for evento in pygame.event.get():
+            if evento.digitado == pygame.QUIT:
+                self.rodando = False
 
 
 
