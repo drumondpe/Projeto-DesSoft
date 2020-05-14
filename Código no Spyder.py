@@ -8,8 +8,6 @@ import pygame
 import random
 
 pygame.init()
-posicao = pygame.math.Vector2
-LARGURA = 
 
 ############ CONFIGURAÇÕES ##########
 LARGURA, ALTURA = 600, 700 #config da tela
@@ -23,7 +21,15 @@ tamanho_texto_start = 18
 fonte_texto_start = 'Futura XBlk BT'
     
     
-        
+############ CLASSE ###############
+
+class Jogo:
+    def __init__(self):
+        self.tela = pygame.display.set_mode(LARGURA, ALTURA)
+        pygame.display.set_caption('Joguinho do come-come')
+
+
+
                 
         
         
