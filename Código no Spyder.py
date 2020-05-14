@@ -31,7 +31,18 @@ class Jogo:
 
 
                 
-        
+########## Outras funções ############
+
+
+
+
+###### Funções da primeira tela ######
+
+
+
+###### Funções da tela de jogo #######
+
+
         
         
         
