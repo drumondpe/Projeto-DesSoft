@@ -44,9 +44,9 @@ while jogo:
     tela.fill(preto)
     tela.blit(titulo_do_jogo, (90, 200))
     tela.blit(botao_de_inicio, (30, 270))
-    tela.blit(nome_dos_criadores1, (250, 300))
-    tela.blit(nome_dos_criadores2, (250, 250))
-    tela.blit(nome_dos_criadores3, (250, 300))
+    tela.blit(nome_dos_criadores1, (190, 470))
+    tela.blit(nome_dos_criadores2, (190, 510))
+    tela.blit(nome_dos_criadores3, (190, 550))
 
 
 
