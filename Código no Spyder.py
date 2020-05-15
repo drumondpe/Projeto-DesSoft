@@ -42,7 +42,7 @@ while jogo:
             jogo = False
     
     tela.fill(preto)
-    tela.blit(titulo_do_jogo, (20, 40))
+    tela.blit(titulo_do_jogo, (40, 40))
     tela.blit(botao_de_inicio, (50, 350))
     tela.blit(nome_dos_criadores1, (100, 500))
     tela.blit(nome_dos_criadores2, (100, 540))
