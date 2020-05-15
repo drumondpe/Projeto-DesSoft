@@ -25,7 +25,7 @@ preto = (0, 0, 0)
 
 
 #config de fontes
-fonte_texto_inicial = pygame.font.SysFont('Futura XBlk BT', 60)
+fonte_texto_inicial = pygame.font.SysFont('Futura ZBlk BT', 60)
 titulo_do_jogo = fonte_texto_inicial.render('Jogo do Come-Come', True, (200, 205, 70))
 botao_de_inicio = fonte_texto_inicial.render('Pressione Barra de Espaço para começar', True, (255, 40, 255))
 nome_dos_criadores1 = fonte_texto_inicial.render('Keiya Nishio', True, (200, 90, 210))
@@ -41,8 +41,9 @@ while jogo:
             jogo = False
     
     tela.fill(preto)
-    tela.blit(titulo_do_jogo, (40, 290))
-    tela.blit()
+    tela.blit(titulo_do_jogo, (290, 40))
+    tela.blit(botao_de_inicio, (400, 50))
+    tela
 
 
 
