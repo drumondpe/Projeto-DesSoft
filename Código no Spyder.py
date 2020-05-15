@@ -18,6 +18,7 @@ ALTURA = 700
 tela = pygame.display.set_mode((LARGURA, ALTURA))
 pygame.display.set_caption('Joguinho do come-come')
 
+<<<<<<< HEAD
 jogo = True
 
 #config de cores
@@ -37,9 +38,15 @@ nome_dos_criadores3 = fonte_texto_inicial.render('Pedro Drumond', True, (200, 90
 
 fundo = pygame.image.load('assests/img/map-pacman.png').convert()
 
-while game:
-    for event in pygame.event.get()
-    
+while jogo:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            jogo=False
+    tela.fill((0, 0, 0))
+    tela.blit(fundo, (0, 0))
+    pygame.display.update()
+pygame.quit()
+
     
     
 ############ CLASSE ###############
