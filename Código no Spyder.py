@@ -19,14 +19,20 @@ pygame.display.set_caption('Joguinho do come-come')
 FPS = 60
 
 preto = (0, 0, 0) #config de cores
-game=True
+jogo=True
 
 #config de fontes
 fundo = pygame.image.load('assests/img/map-pacman.png').convert()
 
-while game:
-    for event in pygame.event.get()
-    
+while jogo:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            jogo=False
+    tela.fill((0, 0, 0))
+    tela.blit(fundo, (0, 0))
+    pygame.display.update()
+pygame.quit()
+
     
     
 ############ CLASSE ###############
