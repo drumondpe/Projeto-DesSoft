@@ -12,16 +12,25 @@ pygame.mixer.init()
 
 
 ############ CONFIGURAÇÕES ##########
+#config da tela
 LARGURA = 600
-ALTURA = 700 #config da tela
+ALTURA = 700
 tela = pygame.display.set_mode((LARGURA, ALTURA))
 pygame.display.set_caption('Joguinho do come-come')
-FPS = 60
 
-preto = (0, 0, 0) #config de cores
-game=True
+jogo = True
+
+#config de cores
+preto = (0, 0, 0) 
+
 
 #config de fontes
+fonte_texto_inicial = pygame.font.SysFont('Futura ZBlk BT', 48)
+titulo_do_jogo = fonte_texto_inicial.render('Jogo do Come-Come', True, (0, 0, 255))
+
+
+
+
 fundo = pygame.image.load('assests/img/map-pacman.png').convert()
 
 while game:
