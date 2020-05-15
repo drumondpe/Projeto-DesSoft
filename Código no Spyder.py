@@ -13,8 +13,8 @@ pygame.mixer.init()
 
 ############ CONFIGURAÇÕES ##########
 #config da tela
-LARGURA = 600
-ALTURA = 700
+LARGURA = 500
+ALTURA = 600
 tela = pygame.display.set_mode((LARGURA, ALTURA))
 pygame.display.set_caption('Joguinho do come-come')
 
@@ -25,12 +25,13 @@ preto = (0, 0, 0)
 
 
 #config de fontes
-fonte_texto_inicial = pygame.font.SysFont('Futura ZBlk BT', 60)
+fonte_texto_inicial = pygame.font.SysFont('Futura ZBlk BT', 50)
+fonte_texto_nomes = pygame.font.SysFont('Futura ZBlk BT', 30)
 titulo_do_jogo = fonte_texto_inicial.render('Jogo do Come-Come', True, (200, 205, 70))
 botao_de_inicio = fonte_texto_inicial.render('Pressione Barra de Espaço para começar', True, (255, 40, 255))
-nome_dos_criadores1 = fonte_texto_inicial.render('Keiya Nishio', True, (200, 90, 210))
-nome_dos_criadores2 = fonte_texto_inicial.render('Jerônimo Afrange', True, (200, 90, 210))
-nome_dos_criadores3 = fonte_texto_inicial.render('Pedro Drumond', True, (200, 90, 210))
+nome_dos_criadores1 = fonte_texto_nomes.render('Keiya Nishio', True, (200, 90, 210))
+nome_dos_criadores2 = fonte_texto_nomes.render('Jerônimo Afrange', True, (200, 90, 210))
+nome_dos_criadores3 = fonte_texto_nomes.render('Pedro Drumond', True, (200, 90, 210))
 
 
 #fundo = pygame.image.load('assests/img/map-pacman.png').convert()
@@ -41,9 +42,11 @@ while jogo:
             jogo = False
     
     tela.fill(preto)
-    tela.blit(titulo_do_jogo, (290, 40))
-    tela.blit(botao_de_inicio, (400, 50))
-    tela
+    tela.blit(titulo_do_jogo, (20, 40))
+    tela.blit(botao_de_inicio, (50, 350))
+    tela.blit(nome_dos_criadores1, (100, 500))
+    tela.blit(nome_dos_criadores2, (100, 540))
+    tela.blit(nome_dos_criadores3, (100, 580))
 
 
 
