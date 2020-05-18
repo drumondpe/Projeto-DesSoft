@@ -15,7 +15,7 @@ pygame.display.set_caption('Joguinho do Come-Come')
 mapa = pygame.image.load('map-pacman.png').convert_alpha()
 
 #tela.fill(0, 0, 0)
-tela.blit(mapa, (0, 0))
+#tela.blit(mapa, (0, 0))
 
 relogio = pygame.time.Clock()
 FPS = 60
@@ -65,10 +65,14 @@ while jogo:
         if event.type == pygame.QUIT:
             jogo = False
 
+    tela.fill((0, 0, 0))
+    tela.blit(mapa, (0, 0))
+    tela.blit(fantasma_verde, (0, 0))
+    tela.blit(fantasma_vermelho, (20, 20))
+    tela.blit(fantasma_rosa, (40, 40))
+
 
 
     pygame.display.update()
-
-
 
 pygame.quit()
