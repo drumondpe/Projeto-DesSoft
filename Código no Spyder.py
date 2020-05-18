@@ -4,7 +4,9 @@
 #Fazer o mapa
 #Movimentação do Pacman
 #Movimentação inteligente dos mobs
-
+#pontinhos brancos 
+#vidas
+#pontuação
 import pygame
 import random
 
