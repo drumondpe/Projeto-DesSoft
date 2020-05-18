@@ -1,9 +1,10 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
 
-Este é um arquivo de script temporário.
-"""
+####PRECISAMOS FAZER:
+#Mudar de tela
+#Fazer o mapa
+#Movimentação do Pacman
+#Movimentação inteligente dos mobs
+
 import pygame
 import random
 
