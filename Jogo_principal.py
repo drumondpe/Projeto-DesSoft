@@ -14,11 +14,11 @@ tela = pygame.display.set_mode((LARGURA, ALTURA))
 pygame.display.set_caption('Joguinho do Come-Come')
 mapa = pygame.image.load('map-pacman.png').convert_alpha()
 
-tela.fill(0, 0, 0)
+#tela.fill(0, 0, 0)
 tela.blit(mapa, (0, 0))
 
 relogio = pygame.time.Clock()
-FPS = 30
+FPS = 60
 
 
 ####################### CONFIG DAS IMAGENS ####################################
@@ -39,10 +39,20 @@ fantasma_rosa = pygame.transform.scale(fantasma_rosa_img, (LARGURA_FANTASMA, ALT
 fantasma_vermelho = pygame.transform.scale(fantasma_vermelho_img, (LARGURA_FANTASMA, ALTURA_FANTASMA))
 fantasma_tiltado = pygame.transform.scale(fantasma_tiltado_img, (LARGURA_FANTASMA, ALTURA_FANTASMA))
 
-########################## LOOP PRINCIPAL ########################################
+
+########################## CLASSE PRINCIPAL ###################################
+
+class Fantasma(pygame.sprite.Sprite):
+    def __init__(self, img):
+        pygame.sprite.Sprite.__init__(self)
+        
+        self.image = img
+
+
+########################## LOOP PRINCIPAL #####################################
 
 while jogo:
-    clock.tick(FPS)
+    relogio.tick(FPS)
 
 
     for event in pygame.event.get():
@@ -51,9 +61,8 @@ while jogo:
 
 
 
-            pygame.display.update()
+    pygame.display.update()
 
 
 
 pygame.quit()
-
