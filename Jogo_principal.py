@@ -70,6 +70,8 @@ while jogo:
     tela.blit(fantasma_verde, (0, 0))
     tela.blit(fantasma_vermelho, (20, 20))
     tela.blit(fantasma_rosa, (40, 40))
+    tela.blit(pacman, (60, 60))
+    tela.blit(fantasma_tiltado, (80, 80))
 
 
 
