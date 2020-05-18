@@ -32,6 +32,7 @@ fantasma_rosa_img = pygame.image.load('fantasma-rosa.png').convert_alpha()
 fantasma_vermelho_img = pygame.image.load('fantasma-vermelho.png').convert_alpha()
 fantasma_tiltado_img = pygame.image.load('fantasma-tiltado.png').convert_alpha()
 
+#imprime os fantasmas na tela
 fantasma_verde = pygame.transform.scale(fantasma_verde_img, (LARGURA_FANTASMA, ALTURA_FANTASMA))
 fantasma_rosa = pygame.transform.scale(fantasma_rosa_img, (LARGURA_FANTASMA, ALTURA_FANTASMA))
 fantasma_vermelho = pygame.transform.scale(fantasma_vermelho_img, (LARGURA_FANTASMA, ALTURA_FANTASMA))
