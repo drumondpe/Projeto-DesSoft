@@ -3,9 +3,10 @@ Created on Fri May 15 19:26:29 2020
 
 @author: Pedro Drumond
 """
+
 import pygame
 pygame.init()
-jogo = True
+
 
 #config da tela
 LARGURA = 500
@@ -15,10 +16,11 @@ pygame.display.set_caption('Joguinho do Come-Come')
 mapa = pygame.image.load('map-pacman.png').convert_alpha()
 
 tela.fill(0, 0, 0)
-tela.blit(mapa, (0, 0))
+tela.blit(mapa)
+
+####################### CONFIG DAS IMAGENS #####################################
 
 
-####################### CONFIG DAS IMAGENS ####################################
 
 #configurações dos mobs - imagens (https://www.pngwing.com/pt/free-png-nyddf)
 LARGURA_FANTASMA = 30
@@ -35,23 +37,3 @@ fantasma_verde = pygame.transform.scale(fantasma_verde_img, (LARGURA_FANTASMA, A
 fantasma_rosa = pygame.transform.scale(fantasma_rosa_img, (LARGURA_FANTASMA, ALTURA_FANTASMA))
 fantasma_vermelho = pygame.transform.scale(fantasma_vermelho_img, (LARGURA_FANTASMA, ALTURA_FANTASMA))
 fantasma_tiltado = pygame.transform.scale(fantasma_tiltado_img, (LARGURA_FANTASMA, ALTURA_FANTASMA))
-
-########################## LOOP PRINCIPAL ########################################
-
-while jogo:
-    clock.tick(FPS)
-
-
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            jogo = False
-
-
-
-            pygame.display.update()
-
-
-
-pygame.quit()
-
-
