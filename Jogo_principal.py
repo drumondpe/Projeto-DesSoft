@@ -18,7 +18,7 @@ mapa = pygame.image.load('map-pacman.png').convert_alpha()
 tela.fill(0, 0, 0)
 tela.blit(mapa)
 
-####################### CONFIG DAS IMAGENS #####################################
+####################### CONFIG DAS IMAGENS ####################################
 
 
 
