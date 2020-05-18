@@ -26,18 +26,24 @@ FPS = 60
 #configurações dos mobs - imagens (https://www.pngwing.com/pt/free-png-nyddf)
 LARGURA_FANTASMA = 30
 ALTURA_FANTASMA = 18
+LARGURA_PACMAN = 30
+ALTURA_PACMAN = 18
 
 #imagens dos mobs
 fantasma_verde_img = pygame.image.load('fantasma-verde.png').convert_alpha()
 fantasma_rosa_img = pygame.image.load('fantasma-rosa.png').convert_alpha()
 fantasma_vermelho_img = pygame.image.load('fantasma-vermelho.png').convert_alpha()
 fantasma_tiltado_img = pygame.image.load('fantasma-tiltado.png').convert_alpha()
+pacman_img = pygame.image.load('pacman.png').convert_alpha()
 
 #imprime os fantasmas na tela
 fantasma_verde = pygame.transform.scale(fantasma_verde_img, (LARGURA_FANTASMA, ALTURA_FANTASMA))
 fantasma_rosa = pygame.transform.scale(fantasma_rosa_img, (LARGURA_FANTASMA, ALTURA_FANTASMA))
 fantasma_vermelho = pygame.transform.scale(fantasma_vermelho_img, (LARGURA_FANTASMA, ALTURA_FANTASMA))
 fantasma_tiltado = pygame.transform.scale(fantasma_tiltado_img, (LARGURA_FANTASMA, ALTURA_FANTASMA))
+pacman = pygame.transform.scale(pacman_img, (LARGURA_PACMAN, ALTURA_PACMAN))
+
+
 
 
 ########################## CLASSE PRINCIPAL ###################################
