@@ -7,6 +7,8 @@
 #pontinhos brancos 
 #vidas
 #pontuação
+#construindo o mapa
+
 import pygame
 import random
 
