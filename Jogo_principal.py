@@ -2,11 +2,7 @@
 Created on Fri May 15 19:26:29 2020
 
 @author: Pedro Drumond
-"""
-#fazer o mapa!!!
-#melhorar a movimentação do pacman
-
-
+""
 
 #poderes (iteração)
 

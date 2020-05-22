@@ -1,13 +1,17 @@
 
 ####PRECISAMOS FAZER:
-#Mudar de tela
-#Fazer o mapa
-#Movimentação do Pacman
-#Movimentação inteligente dos mobs
-#pontinhos brancos 
-#vidas
-#pontuação
-#construindo o mapa
+
+# Mapa
+# Movimentação inteligente (fantasmas)
+# Colisões -------> Vidas
+# Pontos brancos
+# Pontuação
+# Mudança de tela
+# Pontuação na segunda tela
+
+###ITERAÇÕES:
+# Powerups
+
 
 import pygame
 import random
