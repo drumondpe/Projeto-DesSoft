@@ -1,7 +1,7 @@
 """
 Created on Fri May 15 19:26:29 2020
 
-@author: Pedro Drumond, Keiya Nishio, Jerônimo Afrange
+@authors: Pedro Drumond, Keiya Nishio, Jerônimo Afrange
 """
 
 #poderes (iteração)
