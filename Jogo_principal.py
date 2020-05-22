@@ -3,6 +3,13 @@ Created on Fri May 15 19:26:29 2020
 
 @author: Pedro Drumond
 """
+#fazer o mapa!!!
+#melhorar a movimentação do pacman
+
+
+
+#poderes (iteração)
+
 import pygame
 pygame.init()
 jogo = True
@@ -85,6 +92,7 @@ class Fantasma(pygame.sprite.Sprite):
         self.imagem = imagem
         self.rect = self.imagem.get_rect()
         #precisamos fazer a movimentação inteligente
+        
         #self.rect.x = random.randint(0, WIDTH-METEOR_WIDTH)
         #self.rect.y = random.randint(-100, -METEOR_HEIGHT)
         #self.speedx = random.randint(-3, 3)
@@ -138,24 +146,24 @@ while jogo:
         # Verifica se apertou alguma tecla.
         if tecla.evento == pygame.KEYDOWN:
             # Dependendo da tecla, altera a velocidade.
-            if tecla.evento == pygame.K_LEFT: #or pygame.A:
+            if tecla.evento == pygame.K_LEFT: #or pygame.K_A:
                 player.velocidadex -= 4
-            if tecla.evento == pygame.K_RIGHT: #or pygame.D:
+            if tecla.evento == pygame.K_RIGHT: #or pygame.K_D:
                 player.velocidadex += 4
-            if tecla.evento == pygame.K_UP: #or pygame.W
+            if tecla.evento == pygame.K_UP: #or pygame.K_W
                 player.velocidadey -= 4
-            if tecla.evento == pygame.K_DOWN: #or pygame.S
+            if tecla.evento == pygame.K_DOWN: #or pygame.K_S
                 player.velocidadey += 4
         # Verifica se soltou alguma tecla.
         if tecla.evento == pygame.KEYUP:
             # Dependendo da tecla, altera a velocidade.
-            if tecla.evento == pygame.K_LEFT: #or pygame.A:
+            if tecla.evento == pygame.K_LEFT: #or pygame.K_A:
                 player.velocidadex += 4
-            if tecla.evento == pygame.K_RIGHT: #or pygame.D:
+            if tecla.evento == pygame.K_RIGHT: #or pygame.K_D:
                 player.velocidadex -= 4
-            if tecla.evento == pygame.K_UP: #or pygame.W
+            if tecla.evento == pygame.K_UP: #or pygame.K_W
                 player.velocidadey += 4
-            if tecla.evento == pygame.K_DOWN: #or pygame.S
+            if tecla.evento == pygame.K_DOWN: #or pygame.K_S
                 player.velocidadey -= 4
 #####Atualiza o estado do jogo
     #Atualiza a posição dos fantasmas
