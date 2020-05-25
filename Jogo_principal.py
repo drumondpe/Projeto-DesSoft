@@ -15,7 +15,7 @@ LARGURA = 500
 ALTURA = 600
 tela = pygame.display.set_mode((LARGURA, ALTURA))
 pygame.display.set_caption('Joguinho do Come-Come')
-mapa = pygame.image.load('map-pacman.png').convert_alpha()
+mapa = pygame.image.load('mapa_pacman.png').convert_alpha()
 
 #tela.fill(0, 0, 0)
 #tela.blit(mapa, (0, 0))
