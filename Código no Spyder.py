@@ -22,8 +22,8 @@ pygame.mixer.init()
 
 ############ CONFIGURAÇÕES ##########
 #config da tela
-LARGURA = 500
-ALTURA = 600
+LARGURA = 560
+ALTURA = 620
 tela = pygame.display.set_mode((LARGURA, ALTURA))
 pygame.display.set_caption('Joguinho do come-come')
 
@@ -53,12 +53,12 @@ nome_dos_criadores3 = fonte_texto_nomes.render('Pedro Drumond', True, (200, 90, 
 
 #posicionamento dos textos que aparecem na primeira tela
 tela.fill(preto)
-tela.blit(titulo_do_jogo, (90, 90))
-tela.blit(botao_de_inicio1, (25, 270))
-tela.blit(botao_de_inicio2, (135, 300))
-tela.blit(nome_dos_criadores1, (180, 490))
-tela.blit(nome_dos_criadores2, (180, 520))
-tela.blit(nome_dos_criadores3, (180, 550))
+tela.blit(titulo_do_jogo, (110, 90))
+tela.blit(botao_de_inicio1, (50, 270))
+tela.blit(botao_de_inicio2, (160, 300))
+tela.blit(nome_dos_criadores1, (200, 490))
+tela.blit(nome_dos_criadores2, (200, 520))
+tela.blit(nome_dos_criadores3, (200, 550))
 
 #fundo = pygame.image.load('assests/img/map-pacman.png').convert()
 
