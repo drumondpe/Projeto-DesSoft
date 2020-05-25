@@ -4,17 +4,18 @@ Created on Fri May 15 19:26:29 2020
 @authors: Pedro Drumond, Keiya Nishio, Jerônimo Afrange
 """
 
+#poderes (iteração)
 
 import pygame
 pygame.init()
 jogo = True
 
 #config da tela
-LARGURA = 500
-ALTURA = 600
+LARGURA = 560
+ALTURA = 620
 tela = pygame.display.set_mode((LARGURA, ALTURA))
 pygame.display.set_caption('Joguinho do Come-Come')
-mapa = pygame.image.load('mapa_pacman.png').convert_alpha()
+mapa = pygame.image.load('map-pacman.png').convert_alpha()
 
 #tela.fill(0, 0, 0)
 #tela.blit(mapa, (0, 0))
