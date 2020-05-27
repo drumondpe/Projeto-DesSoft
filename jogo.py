@@ -6,7 +6,7 @@ Autores: Jerônimo Afrange, Keiya Nishio e Pedro Drumond
 
 ####PRECISAMOS FAZER:
 
-# Mapa
+## Mapa
 # Movimentação inteligente (fantasmas)
 # Colisões -------> Vidas
 # Pontos brancos
