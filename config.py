@@ -13,6 +13,8 @@ class Config():
 		self.altura_tela = 620
 		self.FPS = 60
 
+		self.velocidade = 5	# pixels/ciclo
+
 		self.cores = Cores()
 		self.textos = Textos()
 
