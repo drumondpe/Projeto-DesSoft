@@ -3,7 +3,7 @@ Módulo das classes do jogo
 
 Autores: Jerônimo Afrange, Keiya Nishio e Pedro Drumond
 '''
-
+#testando
 import pygame
 
 class Pacman(pygame.sprite.Sprite):
