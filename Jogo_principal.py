@@ -155,13 +155,13 @@ while jogo:
         if tecla.evento == pygame.KEYUP:
             # Dependendo da tecla, altera a velocidade.
             if tecla.evento == pygame.K_LEFT: #or pygame.K_A:
-                player.velocidadex += 4
+                player.velocidadex = 0
             if tecla.evento == pygame.K_RIGHT: #or pygame.K_D:
-                player.velocidadex -= 4
+                player.velocidadex = 0
             if tecla.evento == pygame.K_UP: #or pygame.K_W
-                player.velocidadey += 4
+                player.velocidadey = 0
             if tecla.evento == pygame.K_DOWN: #or pygame.K_S
-                player.velocidadey -= 4
+                player.velocidadey = 0
 #####Atualiza o estado do jogo
     #Atualiza a posição dos fantasmas
     todos_personagens.update()

@@ -23,6 +23,8 @@ import pygame
 import random
 
 from config import Config
+from classes import *
+
 
 # obtem configurações
 CONFIG = Config()
@@ -85,6 +87,9 @@ while RODANDO:
 				if event.key == pygame.K_SPACE:
 					TELA_INICIAL = False
 					break
+
+		elif not GAME_OVER: pass
+
 
 	# parte do loop que é o jogo mesmo
 	if not GAME_OVER and not TELA_INICIAL:
