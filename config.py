@@ -4,6 +4,8 @@ Módulo de configurações do jogo
 Autores: Jerônimo Afrange, Keiya Nishio e Pedro Drumond
 '''
 
+import pygame
+
 class Config():
 
 	def __init__(self):
@@ -17,6 +19,7 @@ class Config():
 
 		self.cores = Cores()
 		self.textos = Textos()
+		self.poligonos = Poligonos(self.altura_tela, self.largura_tela)
 
 
 class Cores():
@@ -39,24 +42,32 @@ class Textos():
 		self.tamanho_pequeno = 30
 
 
+class Poligonos():
+	''' dimensoes das barreiras da arena '''
 
-CONFIG = {
-	'titulo': 'Joguinho do Come-Come'.upper(),
-	'largura': 560,
-	'altura': 620,
-	'fps': 60,
-	'cores': {
-		'titulo': (200, 205, 70),
-		'nomes': (200, 90, 210),
-		'fundo': (0, 0, 0),
-		'preto': (0, 0, 0),
-		'branco': (255, 255, 255),
-		'rosa': (255, 0, 255),
-		'vermelho': (255, 0, 0),
-		'verde': (0, 255, 0),
-		'azul': (0, 0, 255),
-		'amarelo': (255, 255, 0)
-	},
-	'fonte grande': 50,
-	'fonte pequena': 30
-}
+	def __init__(self, altura_tela, largura_tela):
+
+		self.cor = pygame.Color(255, 255, 255, 0)
+		self.larguras = [20]
+		
+		self.barreiras = [
+
+			(	# pontos do polígono da barreira externa
+				(0, 0),
+				(largura_tela, 0),
+				(largura_tela, altura_tela),
+				(0, altura_tela),
+				(0, self.larguras[0]),
+				(self.larguras[0], self.larguras[0]),
+				(self.larguras[0], altura_tela - self.larguras[0]),
+				(largura_tela - self.larguras[0], altura_tela - self.larguras[0]),
+				(largura_tela - self.larguras[0], self.larguras[0]),
+				(0, self.larguras[0])
+			)
+		]
+
+
+
+
+
+

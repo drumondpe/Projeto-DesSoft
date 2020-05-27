@@ -11,15 +11,17 @@ CORES = None
 TEXTOS = None
 TELA = None
 PACMAN = None
+BARREIRAS = None
 
-def init(config, tela, pacman):
+def init(config, tela, pacman, barreiras):
 	''' incializa as variáveis do módulo de funções '''
 
-	global CONFIG, TELA, TEXTOS, CORES, PACMAN
+	global CONFIG, TELA, TEXTOS, CORES, PACMAN, BARREIRAS
 
 	CONFIG = config
 	TELA = tela
 	PACMAN = pacman
+	BARREIRAS = barreiras
 
 	TEXTOS = CONFIG.textos
 	CORES = CONFIG.cores
