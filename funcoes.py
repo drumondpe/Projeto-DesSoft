@@ -75,30 +75,30 @@ def checar_eventos(tela_inicial, game_over, rodando):
 			if event.type == pygame.KEYDOWN:
 
 				if event.key == pygame.K_DOWN or event.key == pygame.K_s:
-					PACMAN.velocidade_y = PACMAN.velocidade
+					PACMAN.indo_para_baixo = True
 
 				elif event.key == pygame.K_UP or event.key == pygame.K_w:
-					PACMAN.velocidade_y = -1 * PACMAN.velocidade
+					PACMAN.indo_para_cima = True
 
 				elif event.key == pygame.K_LEFT or event.key == pygame.K_a:
-					PACMAN.velocidade_x = -1 * PACMAN.velocidade
+					PACMAN.indo_para_esquerda = True
 
 				elif event.key == pygame.K_RIGHT or event.key == pygame.K_d:
-					PACMAN.velocidade_x = PACMAN.velocidade
+					PACMAN.indo_para_direita = True
 
 			if event.type == pygame.KEYUP:
 
 				if event.key == pygame.K_DOWN or event.key == pygame.K_s:
-					PACMAN.velocidade_y = 0
+					PACMAN.indo_para_baixo = False
 
 				elif event.key == pygame.K_UP or event.key == pygame.K_w:
-					PACMAN.velocidade_y = 0
+					PACMAN.indo_para_cima = False
 
 				elif event.key == pygame.K_LEFT or event.key == pygame.K_a:
-					PACMAN.velocidade_x = 0
+					PACMAN.indo_para_esquerda = False
 
 				elif event.key == pygame.K_RIGHT or event.key == pygame.K_d:
-					PACMAN.velocidade_x = 0
+					PACMAN.indo_para_direita = False
 
 	return tela_inicial, rodando
 
