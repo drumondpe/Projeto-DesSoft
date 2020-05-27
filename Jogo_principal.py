@@ -15,12 +15,12 @@ LARGURA = 560
 ALTURA = 620
 tela = pygame.display.set_mode((LARGURA, ALTURA))
 pygame.display.set_caption('Joguinho do Come-Come')
-mapa = pygame.image.load('map-pacman.png').convert_alpha()
+mapa = pygame.image.load('mapa.png').convert_alpha()
 
 #tela.fill(0, 0, 0)
 #tela.blit(mapa, (0, 0))
 
-relogio = pygame.time.Clock()
+CLOCK = pygame.time.Clock()
 FPS = 60
 
 
@@ -66,7 +66,7 @@ class Pacman(pygame.sprite.Sprite):
         self.todas_frutas = todas_frutas
         self.frutas_img = frutas_img
 
-     def Movimento(self):
+    def Movimento(self):
         #atualiza a posição do pacman
         self.posicao.x += self.velocidade.x
         self.posicao.y += self.velocidade.y
@@ -131,7 +131,8 @@ jogo = True
 ########################## LOOP PRINCIPAL #####################################
 
 while jogo:
-    relogio.tick(FPS)
+
+    CLOCK.tick(FPS)
 
     # Reaiza os eventos
     for tecla in pygame.event.get():
