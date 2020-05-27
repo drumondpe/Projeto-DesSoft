@@ -48,7 +48,7 @@ class Poligonos():
 	def __init__(self, altura_tela, largura_tela):
 
 		self.cor = pygame.Color(255, 255, 255, 0)
-		self.larguras = [20]
+		self.larguras = [16]
 		
 		self.barreiras = [
 
