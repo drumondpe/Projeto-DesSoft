@@ -26,13 +26,11 @@ import funcoes as f
 
 from config import Config
 from pacman import Pacman
-from barreira import Barreira
 
 # obtem configurações
 CONFIG = Config()
 TEXTOS = CONFIG.textos
 CORES = CONFIG.cores
-POLIGONOS = CONFIG.poligonos
 
 # roda o jogo
 def rodar():
@@ -57,11 +55,7 @@ def rodar():
 	# incializacao de entidades e módulos
 	PACMAN = Pacman(TELA, CONFIG)
 
-	BARREIRAS = list()
-	for pontos in POLIGONOS.barreiras:
-		BARREIRAS.append(Barreira(CONFIG, TELA, pontos))
-
-	f.init(CONFIG, TELA, PACMAN, BARREIRAS)
+	f.init(CONFIG, TELA, PACMAN)
 
 	# apresenta a tela inicial
 	f.apresentar_tela_inicial()
@@ -80,9 +74,6 @@ def rodar():
 
 			TELA.fill(CORES.fundo)
 			TELA.blit(MAPA, (0, 0))
-
-			for barreira in BARREIRAS:
-				barreira.desenhar()
 
 			PACMAN.update()	# atualiza a posição do pacman
 
