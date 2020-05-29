@@ -24,6 +24,7 @@ import random
 
 import funcoes as f
 
+from tiles import MAPA
 from config import Config
 from pacman import Pacman
 
@@ -44,13 +45,14 @@ def rodar():
 
 	pygame.display.set_caption(CONFIG.titulo)
 
-	# inicializacao de imagens
-	MAPA = pygame.image.load('imagens/mapa.png').convert_alpha()
-
 	# bandeiras do programa
 	RODANDO = True
 	TELA_INICIAL = True
 	GAME_OVER = False
+
+	# imagens
+	TILE_ROXO = pygame.image.load('imagens/tile-roxo.png').convert()
+	TILE_PRETO = pygame.image.load('imagens/tile-preto.png').convert()
 
 	# incializacao de entidades e módulos
 	PACMAN = Pacman(TELA, CONFIG)
@@ -73,7 +75,17 @@ def rodar():
 		if not GAME_OVER and not TELA_INICIAL:
 
 			TELA.fill(CORES.fundo)
-			TELA.blit(MAPA, (0, 0))
+
+			tile_pos = [0, 0]
+
+			for tiles in MAPA:
+				for tile in tiles:
+					if tile == 0: TELA.blit(TILE_PRETO, tile_pos)
+					elif tile == 1: TELA.blit(TILE_ROXO, tile_pos)
+					tile_pos[0] += CONFIG.tile_size
+
+				tile_pos[0] = 0
+				tile_pos[1] += CONFIG.tile_size
 
 			PACMAN.update()	# atualiza a posição do pacman
 

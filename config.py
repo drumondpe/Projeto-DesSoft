@@ -11,14 +11,16 @@ class Config():
 	def __init__(self):
 
 		self.titulo = 'Joguinho do Come-Come'
-		self.largura_tela = 560
-		self.altura_tela = 620
+		self.largura_tela = 600	# para mudar tamanho da tela, mudar também quantidade ou tamanho de tiles em tiles.py
+		self.altura_tela = 700
 		self.FPS = 60
 
 		self.velocidade = 5	# pixels/ciclo
 
 		self.cores = Cores()
 		self.textos = Textos()
+
+		self.tile_size = 25
 
 
 class Cores():

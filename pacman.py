@@ -18,7 +18,7 @@ class Pacman(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.screen_rect = tela.get_rect()
         self.rect.centerx = self.screen_rect.centerx
-        self.rect.bottom = self.screen_rect.bottom - 20
+        self.rect.bottom = self.screen_rect.bottom - config.tile_size
 
         # propriedades customizadas de movimento
         self.velocidade = config.velocidade
