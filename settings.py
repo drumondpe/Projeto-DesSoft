@@ -10,7 +10,7 @@ class Settings():
 
 		# configurações de tile
 		self.tile_size = 25
-		
+
 		# configurações da janela
 		self.screen_width = 24 * self.tile_size
 		self.screen_height = 28 * self.tile_size
@@ -22,6 +22,9 @@ class Settings():
 		# sub-configurações
 		self.texts = Settings.Texts()
 		self.colors = Settings.Colors()
+
+		# pacman settings
+		self.pacman_speed = 5
 
 
 	class Texts():

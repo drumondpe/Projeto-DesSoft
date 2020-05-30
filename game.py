@@ -9,6 +9,7 @@ import pygame
 import game_functions as gf
 
 from settings import Settings
+from pacman import Pacman
 from map import Map
 
 def run():
@@ -40,8 +41,6 @@ def run():
 	# loop geral
 	while RUNNING:
 
-		print(GAME_STATE)
-
 		# --- --- loop do menu principal --- --- --- --- ---
 		while GAME_STATE == 0:
 
@@ -63,7 +62,7 @@ def run():
 		if GAME_STATE == 1:
 			# renderiza o mapa
 			MAP = Map(DIR, SETTINGS, IMAGES['tiles'], map_id = 1)
-
+			PACMAN = Pacman(SETTINGS, IMAGES['pacman'])
 
 
 		# --- --- loop de jogo --- --- --- --- --- --- --- ---
@@ -74,9 +73,13 @@ def run():
 			# esvazia a tela
 			SCREEN.fill(COLORS.bg)
 
-			# desenha o mapa, verifica entradas e atualiza o estado de jogo de acordo
+			# atualiza a posição dos sprites móveis
+			PACMAN.update(MAP)
+
+			# desenha os sprites, verifica entradas e atualiza o estado de jogo de acordo
 			MAP.draw(SCREEN)
-			GAME_STATE = gf.check_events(GAME_STATE)
+			PACMAN.draw(SCREEN)
+			GAME_STATE = gf.check_events(GAME_STATE, PACMAN)
 
 			pygame.display.flip()
 

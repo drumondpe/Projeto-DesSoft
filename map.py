@@ -22,7 +22,8 @@ class Map():
 	def draw(self, screen):
 		''' desenha o mapa na tela '''
 
-		self.tiles.draw(screen)
+		self.tiles[0].draw(screen)
+		self.tiles[1].draw(screen)
 
 
 	@staticmethod
@@ -50,19 +51,26 @@ class Map():
 	def build(settings, matrix, images):
 		''' cria os tiles a partir da matriz do mapa '''
 
-		tiles = Group()
+		hard_tiles = Group()
+		soft_tiles = Group()
 		position = [0, 0]
 
 		for line in matrix:
 
 			for specific_id in line:
-				tiles.add(Tile(position, images[specific_id]))
+
+				if specific_id == 0: 
+					soft_tiles.add(Tile(position, images[specific_id]))
+
+				else:
+					hard_tiles.add(Tile(position,images[specific_id]))
+
 				position[0] += settings.tile_size
 
 			position[0] = 0
 			position[1] += settings.tile_size
 
-		return tiles
+		return soft_tiles, hard_tiles
 
 
 
