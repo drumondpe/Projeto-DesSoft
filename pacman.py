@@ -21,7 +21,7 @@ class Pacman(pygame.sprite.Sprite):
         self.rect.bottom = self.screen_rect.bottom - 20
 
         # propriedades customizadas de movimento
-        self.velocidade = config.velocidade
+        self.velocidade = config.velocidade 'VERIFICAR'
         self.centro = [self.rect.centerx, self.rect.centery]
 
         # bandeiras de movimento
