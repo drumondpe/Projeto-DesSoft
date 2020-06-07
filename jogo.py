@@ -74,7 +74,6 @@ def rodar():
 		# atualiza bandeiras de jogo
 		TELA_INICIAL, RODANDO = f.checar_eventos(TELA_INICIAL, GAME_OVER, RODANDO)
 
-
 		# loop do jogo
 		if not GAME_OVER and not TELA_INICIAL:
 

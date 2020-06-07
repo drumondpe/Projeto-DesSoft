@@ -17,7 +17,7 @@ def init(config, tela, pacman, barreiras):
 	''' incializa as variáveis do módulo de funções '''
 
 	global CONFIG, TELA, TEXTOS, CORES, PACMAN, BARREIRAS
-
+ 
 	CONFIG = config
 	TELA = tela
 	PACMAN = pacman
@@ -74,6 +74,10 @@ def checar_eventos(tela_inicial, game_over, rodando):
 		# se estiver em jogo, verificar as seguintes
 		elif not game_over:
 			
+			fonte_texto_pontuacao = pygame.font.SysFont(TEXTOS.fonte, TEXTOS.tamanho_menor)
+			pontuacao_jogo = fonte_texto_pontuacao.render('Sua pontuação: {}'.format('pontuacao_player'), True, (150, 150, 150) )
+			TELA.blit(pontuacao_jogo, ((CONFIG.largura_tela//2 - pontuacao_jogo.get_width() // 2, 90)))
+
 			if event.type == pygame.KEYDOWN:
 
 				if event.key == pygame.K_DOWN or event.key == pygame.K_s:
