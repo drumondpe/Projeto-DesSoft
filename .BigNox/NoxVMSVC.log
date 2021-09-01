@@ -1,0 +1,81 @@
+VirtualBox COM Server 5.1.14 r112924 win.amd64 (Mar 14 2019 11:12:10) release log
+00:00:00.007939 main     Log opened 2020-11-25T13:48:28.653481200Z
+00:00:00.007939 main     Build Type: release
+00:00:00.007939 main     OS Product: Windows 10
+00:00:00.007939 main     OS Release: 10.0.18363
+00:00:00.007939 main     OS Service Pack: 
+00:00:00.050878 main     DMI Product Name: Predator PH315-52
+00:00:00.072820 main     DMI Product Version: V1.02
+00:00:00.072820 main     Host RAM: 16231MB (15.8GB) total, 5841MB (5.7GB) available
+00:00:00.072820 main     Executable: C:\Program Files (x86)\Bignox\BigNoxVM\RT\NoxVMSVC.exe
+00:00:00.072820 main     Process ID: 4280
+00:00:00.072820 main     Package type: WINDOWS_64BITS_GENERIC (OSE)
+00:00:00.073999 main     hInstance = 00007ff78e7f0000
+00:00:00.231339          VirtualBox: object creation starts
+00:00:00.232338          Home directory: 'C:\Users\Pedro Drumond\.BigNox'
+00:00:00.232338          Installed Drivers:
+00:00:00.234331 main     NoxVMSVCWinMain: msg 0000000000000081
+00:00:00.238321 main     NoxVMSVCWinMain: msg 0000c6a300000083
+00:00:00.238321 main     NoxVMSVCWinMain: msg 0000000000000001
+00:00:00.238321 main     NoxVMSVCWinMain: msg 0000000000000005
+00:00:00.238321 main     NoxVMSVCWinMain: msg 0000000000000003
+00:00:00.238321 main     NoxVMSVCWinMain: msg 0000000000000046
+00:00:00.239963 main     NoxVMSVCWinMain: msg 0000000000000047
+00:00:00.239963 main     NoxVMSVCWinMain: msg 0000000000000003
+00:00:00.240317 main     SVCMain: Main window succesfully created
+00:00:00.245356          Loading settings file "C:\Users\Pedro Drumond\.BigNox\BigNoxVM.xml" with version "1.12-windows"
+00:00:00.246302          USBLibInit: USB Service not found
+00:00:00.449239          netIfGetBoundAdapters: could not find either 'oracle_VBoxNetLwf' or 'sun_VBoxNetFlt' components (0x1)
+00:00:00.473525          HostDnsMonitor: old information
+00:00:00.473525            no server entries
+00:00:00.473525            no domain set
+00:00:00.473525            no search string entries
+00:00:00.473525          HostDnsMonitor: new information
+00:00:00.473525            server 1: 192.168.171.1
+00:00:00.473525            no domain set
+00:00:00.473525            no search string entries
+00:00:00.473525          HostDnsMonitorProxy::notify
+00:00:00.474755          VD: VDInit finished
+00:00:00.475520          ERROR [COM]: aRC=E_FAIL (0x80004005) aIID={88888888-495e-5a36-8890-29999b5f030c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:00.477511          VirtualBox: object created
+00:00:00.574583          ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={88888888-46b4-cde9-91af-1e9d5b6cd945} aComponent={VirtualBoxWrap} aText={Could not find a registered machine named 'nox'}, preserve=false aResultDetail=0
+00:00:00.584496          ERROR [COM]: aRC=VBOX_E_FILE_ERROR (0x80bb0004) aIID={88888888-43e0-e9d0-82e8-ceb307940dda} aComponent={MediumWrap} aText={Could not find file for the medium 'C:\Program Files (x86)\Nox\bin\BignoxVMS\nox\nox-disk2.vdi' (VERR_PATH_NOT_FOUND)}, preserve=false aResultDetail=0
+00:00:00.584496          ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={88888888-46b4-cde9-91af-1e9d5b6cd945} aComponent={VirtualBoxWrap} aText={Could not find a registered machine named 'nox'}, preserve=false aResultDetail=0
+00:00:00.593474          ERROR [COM]: aRC=VBOX_E_FILE_ERROR (0x80bb0004) aIID={88888888-43e0-e9d0-82e8-ceb307940dda} aComponent={MediumWrap} aText={Could not find file for the medium 'C:\Program Files (x86)\Nox\bin\BignoxVMS\nox\nox-disk2.vdi' (VERR_PATH_NOT_FOUND)}, preserve=false aResultDetail=0
+00:00:00.594468          ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={88888888-46b4-cde9-91af-1e9d5b6cd945} aComponent={VirtualBoxWrap} aText={Could not find a registered machine named 'nox'}, preserve=false aResultDetail=0
+00:00:00.600456          ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={88888888-46b4-cde9-91af-1e9d5b6cd945} aComponent={VirtualBoxWrap} aText={Could not find a registered machine named 'nox'}, preserve=false aResultDetail=0
+00:00:00.607450          ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={88888888-46b4-cde9-91af-1e9d5b6cd945} aComponent={VirtualBoxWrap} aText={Could not find a registered machine named 'base5'}, preserve=false aResultDetail=0
+00:00:00.619412          Loading settings file "C:\Program Files (x86)\Nox\bin\data\base5\base5.vbox" with version "1.12-windows"
+00:00:00.847614          ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={88888888-46b4-cde9-91af-1e9d5b6cd945} aComponent={VirtualBoxWrap} aText={Could not find a registered machine named 'nox'}, preserve=false aResultDetail=0
+00:00:07.030125 main     NoxVMSVCWinMain: msg 0000000000000218
+00:00:11.983316          WARNING [COM]: aRC=E_FAIL (0x80004005) aIID={88888888-4477-787d-60b2-3fa70e56fbbc} aComponent={HostWrap} aText={Could not load the Host USB Proxy Service (VERR_FILE_NOT_FOUND). The service might not be installed on the host computer}, preserve=true  aResultDetail=0
+00:00:28.404063 main     NoxVMSVCWinMain: msg 0000000000000218
+00:00:39.992562          netIfGetBoundAdapters: could not find either 'oracle_VBoxNetLwf' or 'sun_VBoxNetFlt' components (0x1)
+00:01:33.617535 main     NoxVMSVCWinMain: msg 0000000000000218
+00:02:18.733600 main     NoxVMSVCWinMain: msg 0000000000000218
+00:03:03.870815 main     NoxVMSVCWinMain: msg 0000000000000218
+00:03:50.815934 main     NoxVMSVCWinMain: msg 0000000000000218
+00:04:34.132319 main     NoxVMSVCWinMain: msg 0000000000000218
+00:05:21.077095 main     NoxVMSVCWinMain: msg 0000000000000218
+00:06:06.225210 main     NoxVMSVCWinMain: msg 0000000000000218
+00:06:49.586108 main     NoxVMSVCWinMain: msg 0000000000000218
+00:07:32.917256 main     NoxVMSVCWinMain: msg 0000000000000218
+00:08:19.868909 main     NoxVMSVCWinMain: msg 0000000000000218
+00:09:10.463519 main     NoxVMSVCWinMain: msg 0000000000000218
+00:09:53.796071 main     NoxVMSVCWinMain: msg 0000000000000218
+00:10:42.578590 main     NoxVMSVCWinMain: msg 0000000000000218
+00:11:36.763921 main     NoxVMSVCWinMain: msg 0000000000000218
+00:12:20.116545 main     NoxVMSVCWinMain: msg 0000000000000218
+00:12:25.345437 Watcher  RTPROCEXITREASON_NORMAL  RTProcWaitCExeModule::MonitorShutdown() line = 101
+00:12:25.741403 main     SVCMain: DestroyMainWindow 
+00:12:25.741403 main     NoxVMSVCWinMain: msg 0000000000000090
+00:12:25.741403 main     NoxVMSVCWinMain: WM_DESTROY 
+00:12:25.745084 main     NoxVMSVCWinMain: msg 0000000000000082
+00:12:25.748083 main     VirtualBox: object deletion starts
+00:12:25.748083 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={88888888-43e0-e9d0-82e8-ceb307940dda} aComponent={MediumWrap} aText={Medium 'C:\Program Files (x86)\Nox\bin\data\base5\Snapshots\{d5af0a77-f5cc-4b58-bc2f-24f5a75406a3}.vmdk' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:12:25.748083 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={88888888-43e0-e9d0-82e8-ceb307940dda} aComponent={MediumWrap} aText={Medium 'C:\Program Files (x86)\Nox\bin\BignoxVMS\nox\Snapshots\{9cde87ca-134a-4187-86f6-ae6f200404af}.vmdk' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:12:25.748083 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={88888888-43e0-e9d0-82e8-ceb307940dda} aComponent={MediumWrap} aText={Medium 'C:\Program Files (x86)\Nox\bin\data\base5\base5-disk1.vmdk' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:12:25.751064 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={88888888-43e0-e9d0-82e8-ceb307940dda} aComponent={MediumWrap} aText={Medium 'C:\Program Files (x86)\Nox\bin\BignoxVMS\nox\nox-disk2.vmdk' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:12:25.760078 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={88888888-46b4-cde9-91af-1e9d5b6cd945} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:12:25.760078 main     VirtualBox: object deleted
+00:12:25.762035 main     SVCMAIN: Returning, COM server process ends.
